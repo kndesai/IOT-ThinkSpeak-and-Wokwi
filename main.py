@@ -22,8 +22,8 @@ sensor_data_history = []
 
 # Generates random sensor readings
 def generate_random_sensor_values():
-    temperature = urandom.uniform(-50, 50)
-    humidity = urandom.uniform(0, 100)
+    temperature = urandom.uniform(-50, 50) #temperature range in Celsius
+    humidity = urandom.uniform(0, 100) #humidity range in %
     co2 = urandom.uniform(300, 2000)  # CO2 levels in ppm
     return temperature, humidity, co2
 
